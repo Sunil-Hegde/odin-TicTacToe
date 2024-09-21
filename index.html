@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+        td{
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
+    <table id="gameTable">
+        <tr>
+            <td id="1"></td>
+            <td id="2"></td>
+            <td id="3"></td>
+        </tr>
+        <tr>
+            <td id="4"></td>
+            <td id="5"></td>
+            <td id="6"></td>
+        </tr>
+        <tr>
+            <td id="7"></td>
+            <td id="8"></td>
+            <td id="9"></td>
+        </tr>
+    </table><br>
+    <input id="player1name" type="text" placeholder="player1name">
+    <input id="player1Symbol" type="text" placeholder="player1Symbol : X or O"><br><br>
+    <input id="player2name" type="text" placeholder="player2name"><br><br>
+    <button id="playGame">Play game</button>
+    <p id="turn"></p>
+    <p id="status"></p>
 </body>
 <script src="./script.js"></script>
 </html>
